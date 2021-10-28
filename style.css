@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    text-shadow: rgba(0, 0, 0, 0.596) 20px;
+    
 }
 .cgeo {
     color: white;
@@ -14,4 +14,21 @@ h2 {
 
 .headerbg {
     background-color: #195128;
+}
+
+.width5 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+}
+
+.navex {
+    background-color: #00420c;
+}
+
+.footereb {
+    font-size: 10px;
+}
+
+.buttoneb {
+    font-size: 12px;
 }
