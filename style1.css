@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-image: url(img/esceb.jpg); 
+    background-repeat: no-repeat;
+    background-position: right 2% bottom 35%;
+    background-size: 350px;    
+   
+}
+
+.cgeo {
+    color: white;
+}
+
+h2 {
+    text-align: center;  
+    font-weight: bold;
+}
+
+.headerbg {
+    background-color: #195128;
+}
+
+.width5 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+}
+
+.navex {
+    background-color: #00420c;
+}
+
+.footereb {
+    font-size: 10px;
+}
+
+.buttoneb {
+    font-size: 12px;
+}
+
+
+.card {
+    background-color: rgba(245, 222, 179, 0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+*
+{
+
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.card
+{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: 20px 20px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+	transition: 1s;
+}
+.card:hover
+{
+	transform: translateX(50%);
+	
+}
+.card .imgBox
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	z-index: 1;
+	transform-style: preserve-3d;
+	background: #000;
+	transition: 1s;
+}
+.card:hover .imgBox
+{
+	transform: rotateY(-180deg);
+	box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+}
+.card .imgBox img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+.card .imgBox img:nth-child(2)
+{
+	transform: rotateY(180deg);
+}
+.card .details
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card .details .content
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.card .details h2
+{
+	text-align: center;
+	font-weight: 700;
+	line-height: 1em;
+}
+.card .details h2 span
+{
+	color: #00420c;
+	font-size: 0.8em;
+}
+.card .details .social-icons
+{
+	position: relative;
+	display: flex;
+	margin-top: 10px;
+}
+.card .details .social-icons a
+{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	margin: 5px;
+	font-size: 18px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background: #333;
+	color: #fff;
+	transition: 0.2s;
+}
+.card .details .social-icons a:hover
+{
+	background: #e21212;
+}
